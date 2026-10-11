@@ -1,68 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ranjith S | Portfolio</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PeopleFirst | AI-powered HR Solutions</title>
+<meta name="description" content="A portfolio demonstration of practical, people-first HR solutions for hiring, employee wellbeing, skills, and retention.">
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f7ff;color:#17233b}
-header{padding:55px 20px;text-align:center;color:white;background:linear-gradient(135deg,#101d38,#1769ff)}
-h1{font-size:42px;margin:0 0 12px}
-header p{font-size:17px}
-nav a{display:inline-block;margin:8px;padding:10px 16px;border:1px solid white;border-radius:24px;color:white;text-decoration:none}
-main{max-width:900px;margin:25px auto;padding:0 16px}
-section{background:white;padding:24px;margin:18px 0;border-radius:16px;box-shadow:0 5px 20px #182c4c12}
-h2{color:#1769ff;margin-top:0}
-.skills span{display:inline-block;background:#e8f0ff;color:#1455bb;padding:8px 12px;margin:5px;border-radius:20px}
-footer{text-align:center;padding:24px;color:#667}
+:root{--ink:#14233b;--muted:#607089;--bg:#f6f8fc;--white:#fff;--blue:#3b67f2;--cyan:#28c5c8;--purple:#8b5cf6;--line:#e2e8f3;--green:#138a65;--amber:#b86c12;--shadow:0 16px 42px #243d6b12}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,5vw,76px);background:#ffffffdc;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.logo{font-weight:900;letter-spacing:-.7px;font-size:1.2rem}.logo b{color:var(--blue)}.navlinks{display:flex;gap:23px;align-items:center;color:#51617b;font-size:.9rem}.navlinks a:hover{color:var(--blue)}.navbtn,.btn{border:0;background:var(--blue);color:white;padding:12px 17px;border-radius:12px;font-weight:750;cursor:pointer;box-shadow:0 8px 18px #3b67f226}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}.hero{padding:68px clamp(18px,6vw,88px) 54px;display:grid;grid-template-columns:1.12fr .88fr;gap:45px;align-items:center;background:radial-gradient(ellipse at 82% 10%,#e4e9ff 0,transparent 34%),linear-gradient(135deg,#fff,#f3f7ff)}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #d9e2ff;background:#fff;color:var(--blue);border-radius:99px;padding:8px 12px;font-size:.76rem;font-weight:800;letter-spacing:.5px}.eyebrow i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan)}h1{font-size:clamp(2.5rem,5.6vw,4.8rem);line-height:1.02;letter-spacing:-2.8px;margin:21px 0}.gradient{background:linear-gradient(95deg,var(--blue),var(--purple),#1aaeb8);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.08rem;line-height:1.8;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.trust{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;margin-top:22px}.trust span:before{content:"✓";color:var(--green);font-weight:900;margin-right:6px}
+.visual{background:#111e39;border-radius:26px;padding:22px;color:white;box-shadow:0 28px 70px #223e782b;transform:rotate(1deg);position:relative;overflow:hidden}.visual:before{content:"";position:absolute;width:250px;height:250px;right:-80px;top:-100px;background:#5c75ff44;border-radius:50%;filter:blur(4px)}.dashhead{display:flex;justify-content:space-between;align-items:center;position:relative}.dashhead small{color:#aab9d8}.live{background:#183f43;color:#6af0d2;border-radius:99px;padding:6px 9px;font-size:.7rem}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0;position:relative}.mini{background:#1b2b4c;border:1px solid #304466;border-radius:15px;padding:15px}.mini small{color:#b2bfd8}.mini strong{display:block;font-size:1.7rem;margin:7px 0}.chart{height:115px;display:flex;align-items:end;gap:10px;padding:12px 4px 0;border-bottom:1px solid #435171;position:relative}.bar{flex:1;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#59e1dc,#526ef8);min-height:12px}.chartlabel{display:flex;justify-content:space-between;color:#aab9d8;font-size:.7rem;margin-top:9px}.section{padding:66px clamp(18px,6vw,88px)}.sectionhead{text-align:center;max-width:720px;margin:0 auto 34px}.sectionhead h2{font-size:clamp(1.8rem,3.5vw,2.7rem);letter-spacing:-1px;margin:12px 0}.sectionhead p{color:var(--muted);line-height:1.7}.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.problem{background:white;border:1px solid var(--line);border-radius:19px;padding:23px;box-shadow:var(--shadow);transition:.2s}.problem:hover{transform:translateY(-4px);border-color:#b8c8ff}.icon{width:47px;height:47px;border-radius:14px;background:#edf1ff;display:grid;place-items:center;font-size:1.35rem;margin-bottom:16px}.problem h3{margin:0 0 10px;font-size:1.08rem}.problem p{color:var(--muted);line-height:1.65;font-size:.91rem}.label{font-size:.72rem;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:1px}.solution{background:#eef3ff}.solution-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:start}.steps{display:grid;gap:13px}.step{display:flex;gap:13px;background:white;border:1px solid var(--line);padding:17px;border-radius:15px}.num{width:32px;height:32px;flex-shrink:0;border-radius:10px;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:850}.step p{margin:5px 0 0;color:var(--muted);font-size:.88rem;line-height:1.55}.demo{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.demo h3{margin-top:0}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:.83rem;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #d7e0ee;border-radius:10px;padding:11px;background:#fbfcff;color:var(--ink)}.field textarea{min-height:80px;resize:vertical}.result{display:none;margin-top:15px;background:#effaf5;border:1px solid #bce8d3;color:#145f47;border-radius:12px;padding:14px;line-height:1.6;font-size:.9rem}.result.show{display:block}.note{font-size:.78rem;color:var(--muted);line-height:1.55}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{padding:21px;background:white;border:1px solid var(--line);border-radius:16px;text-align:center}.metric strong{display:block;font-size:2rem;color:var(--blue)}.metric span{font-size:.82rem;color:var(--muted)}.ethics{background:#13213b;color:white;border-radius:22px;padding:28px;display:grid;grid-template-columns:.75fr 1.25fr;gap:22px;align-items:center}.ethics p,.ethics li{color:#c5d0e5;line-height:1.7}.ethics h2{margin-top:0}.ethics ul{margin:0;padding-left:20px}.cta{margin:0 clamp(18px,6vw,88px) 60px;background:linear-gradient(115deg,#365ef1,#7957e9 60%,#22aeb7);color:white;border-radius:23px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.cta h2{margin:0 0 8px;font-size:1.8rem}.cta p{margin:0;color:#e2e8ff}.cta .btn{background:white;color:#294bd3;box-shadow:none}.footer{padding:24px;text-align:center;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:45px}.visual{max-width:600px;width:100%;margin:auto}.problem-grid{grid-template-columns:1fr 1fr}.solution-layout,.ethics{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.navlinks{gap:12px}.navlinks a:not(.navbtn){display:none}}
+@media(max-width:520px){h1{letter-spacing:-1.5px}.problem-grid{grid-template-columns:1fr}.hero{gap:28px}.section{padding-top:48px;padding-bottom:48px}.visual{padding:15px}.mini strong{font-size:1.4rem}.cta{padding:25px;margin-bottom:35px}}
 </style>
 </head>
 <body>
-<header>
-<h1>Ranjith S</h1>
-<p>MBA Student | HR Aspirant | Data Analysis Enthusiast</p>
-<p>Sivaganga, Tamil Nadu, India</p>
-<nav>
-<a href="#about">About Me</a>
-<a href="#skills">My Skills</a>
-<a href="#projects">Projects</a>
-<a href="https://www.linkedin.com/in/ranjith-sivakumar-339839400" target="_blank">LinkedIn</a>
-</nav>
-</header>
-<main>
-<section id="about">
-<h2>About Me</h2>
-<p>I am an MBA student specializing in Human Resources with a background in Computer Science. I am interested in people management, technology, data analysis and continuous learning.</p>
+<nav class="nav"><a class="logo" href="#top">People<b>First</b><span style="font-size:.72rem;color:#71819a;font-weight:600"> · HR LAB</span></a><div class="navlinks"><a href="#challenges">Challenges</a><a href="#solutions">Solutions</a><a href="#demo">Live Demo</a><a href="#responsible" class="navbtn">Explore Project ↗</a></div></nav>
+<section class="hero" id="top">
+<div><div class="eyebrow"><i></i> PEOPLE-FIRST · AI-READY · PRACTICAL HR</div><h1>Make work better.<br><span class="gradient">For every person.</span></h1>
+<p class="lead">A solution-focused HR concept website showing how people analytics, skills-based growth, smarter onboarding, and employee wellbeing can help solve real workplace challenges.</p>
+<div class="actions"><a class="btn" href="#demo">Try the HR solution ↘</a><a class="btn secondary" href="#challenges">View workplace challenges</a></div>
+<div class="trust"><span>People-centred design</span><span>Responsible AI principles</span><span>Interactive demo</span></div></div>
+<div class="visual"><div class="dashhead"><div><strong>People Insights</strong><br><small>Sample workforce snapshot</small></div><span class="live">● DEMO LIVE</span></div><div class="mini-grid"><div class="mini"><small>Engagement pulse</small><strong>78<span style="font-size:.9rem;color:#aab9d8">/100</span></strong><small>Illustrative score</small></div><div class="mini"><small>Learning progress</small><strong>84%</strong><small>Sample completion</small></div></div><div style="font-size:.82rem;color:#c6d2e8;position:relative">Weekly team wellbeing check-in</div><div class="chart"><div class="bar" style="height:48%"></div><div class="bar" style="height:66%"></div><div class="bar" style="height:57%"></div><div class="bar" style="height:78%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:91%"></div><div class="bar" style="height:82%"></div></div><div class="chartlabel"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div>
 </section>
-<section>
-<h2>Education</h2>
-<p><b>MBA — Human Resources</b><br>Solamalai College of Engineering, Madurai | 2025–Present</p>
-<p><b>B.Sc. Computer Science</b><br>Vivekananda College, Thiruvedakam | 2022–2025</p>
-<p><b>Diploma in Yoga</b><br>Vivekananda College, Madurai | 2025 | 83%</p>
-</section>
-<section>
-<h2>Experience</h2>
-<p><b>Full Stack Development Course Trainer</b> — Flyviv Technology, Karaikudi (2026)</p>
-<p><b>Online Student Trainer</b> — Part-time</p>
-<p><b>Digital Marketing Intern</b> — Brand Bee Technology, Karaikudi (May 2024)</p>
-</section>
-<section id="projects">
-<h2>My Projects</h2>
-<p><b>Image Processing Web App</b> — Developed using HTML, CSS and JavaScript.</p>
-<p><b>Market Trend Analysis</b> — Analysed market data using Python and Excel.</p>
-</section>
-<section id="skills" class="skills">
-<h2>My Skills</h2>
-<span>Power BI</span><span>Excel</span><span>Python Basics</span><span>SQL / MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Communication</span><span>Teamwork</span><span>Problem Solving</span>
-</section>
-<section>
-<h2>Contact Me</h2>
-<p>Email: <a href="mailto:Ranjithsivakumar1105@gmail.com">Ranjithsivakumar1105@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/ranjith-sivakumar-339839400" target="_blank">Visit my profile</a></p>
-</section>
-</main>
-<footer>© 2026 Ranjith S | Personal Portfolio</footer>
-</body>
-</html>
+<section class="section" id="challenges"><div class="sectionhead"><div class="label">The problem space</div><h2>Real workplace challenges.<br><span class="gradient">Practical HR responses.</span></h2><p>Good HR technology should help people, not just create more dashboards. This concept connects common workplace challenges with simple, measurable actions.</p></div>
+<div class="problem-grid">
+<article class="problem"><div class="icon">🧭</div><div class="label">Challenge 01</div><h3>New hires feel lost</h3><p>New employees may not know what to do, who to ask, or how to measure success during their first month.</p><p><b>Solution idea:</b> a 30-60-90 day onboarding checklist, buddy support, and weekly check-ins.</p></article>
+<article class="problem"><div class="icon">🌱</div><div class="label">Challenge 02</div><h3>Skills are not growing</h3><p>Employees may not know which skills to build or which learning resources connect to their career goals.</p><p><b>Solution idea:</b> a skills-gap review, recommended learning plan, and manager follow-up.</p></article>
+<article class="problem"><div class="icon">💬</div><div class="label">Challenge 03</div><h3>Employee feedback gets missed</h3><p>Teams may collect feedback without turning it into visible action, reducing trust and engagement.</p><p><b>Solution idea:</b> short pulse surveys, anonymous themes, action owners, and progress updates.</p></article>
+<article class="problem"><div class="icon">📊</div><div class="label">Challenge 04</div><h3>HR decisions lack evidence</h3><p>People decisions can rely too heavily on assumptions instead of clear, relevant measures.</p><p><b>Solution idea:</b> a transparent HR scorecard with attendance, learning, retention, and engagement context.</p></article>
+<article class="problem"><div class="icon">🤝</div><div class="label">Challenge 05</div><h3>Hiring feels slow or unclear</h3><p>Candidates and hiring managers may experience delayed updates and inconsistent interview steps.</p><p><b>Solution idea:</b> a shared hiring-stage tracker, structured interview rubrics, and clear candidate communication.</p></article>
+<article class="problem"><div class="icon">🛟</div><div class="label">Challenge 06</div><h3>Wellbeing concerns appear late</h3><p>Workload issues may remain hidden until they affect performance, attendance, or retention.</p><p><b>Solution idea:</b> voluntary check-ins, workload conversations, support pathways, and privacy safeguards.</p></article>
+</div></section>
+<section class="section solution" id="solutions"><div class="sectionhead"><div class="label">From problem to action</div><h2>A simple HR problem-solving framework</h2><p>Use this process to show an HR manager that you can move from understanding a problem to evaluating a solution.</p></div>
+<div class="solution-layout"><div><div class="step"><div class="num">1</div><div><b>Listen to employees</b><p>Gather appropriate feedback and understand the real pain point.</p></div></div><div class="step"><div class="num">2</div><div><b>Define the problem</b><p>Describe who is affected, when it happens, and what success would look like.</p></div></div><div class="step"><div class="num">3</div><div><b>Choose a small intervention</b><p>Test a practical change before scaling it across the organisation.</p></div></div><div class="step"><div class="num">4</div><div><b>Measure and improve</b><p>Compare appropriate before-and-after measures and ask employees what changed.</p></div></div></div>
+<div class="demo" id="demo"><div class="label">Interactive demo</div><h3>HR Solution Starter</h3><p class="note">Select a workplace challenge to generate a sample action plan. This is a learning demo, not a real HR case management system.</p><div class="field"><label for="challenge">What challenge are you solving?</label><select id="challenge"><option value="onboarding">New employee onboarding</option><option value="skills">Employee skill development</option><option value="feedback">Low employee engagement</option><option value="hiring">Slow hiring process</option><option value="wellbeing">Employee wellbeing</option></select></div><div class="field"><label for="team">Team or department (optional)</label><input id="team" placeholder="e.g., Sales team"></div><div class="field"><label for="goal">Desired outcome (optional)</label><input id="goal" placeholder="e.g., smoother first 30 days"></div><button class="btn" id="makePlan" type="button">Generate action plan ✨</button><div class="result" id="result" role="status" aria-live="polite"></div><p class="note">Use anonymised, appropriate information only. Do not enter employee names, health details, or confidential company information.</p></div></div></section>
+<section class="section"><div class="sectionhead"><div class="label">What success could look like</div><h2>Measure outcomes, not just activity</h2><p>These are example metrics to consider in a pilot. They are not claims of actual results.</p></div><div class="metrics"><div class="metric"><strong>30/60/90</strong><span>Onboarding check-in milestones</span></div><div class="metric"><strong>1:1</strong><span>Skills conversation per employee</span></div><div class="metric"><strong>Monthly</strong><span>Feedback-to-action review</span></div><div class="metric"><strong>Before/After</strong><span>Evaluate pilot outcomes</span></div></div></section>
+<section class="section" id="responsible"><div class="ethics"><div><div class="label" style="color:#86e7e4">Responsible HR technology</div><h2>Technology should support people — not label them.</h2><p>PeopleFirst is a concept project designed to demonstrate thoughtful HR problem-solving.</p></div><ul><li>Use only authorised and privacy-protected data.</li><li>Never use an automated score alone to make hiring, promotion, or termination decisions.</li><li>Provide transparency, accessibility, human review, and a way to raise concerns.</li><li>Do not present sample dashboard figures as real company performance.</li></ul></div></section>
+<section class="cta"><div><h2>People-first thinking. Data-informed action.</h2><p>A portfolio project concept by Ranjith S · MBA · Computer Science background</p></div><a class="btn" href="#top">Back to top ↑</a></section>
+<footer>PeopleFirst HR Lab · Portfolio demonstration · Built with HTML, CSS & JavaScript · All metrics are illustrative sample data.</footer>
+<script>
+const plans={
+onboarding:{title:"30-60-90 day onboarding pilot",steps:["Map the first-week tasks and key contacts.","Assign a trained buddy and manager check-in.","Review progress at days 30, 60, and 90."],measure:"Measure checklist completion, new-hire feedback, and time to role clarity."},
+skills:{title:"Skills-growth pilot",steps:["Ask employees and managers to identify priority role skills.","Agree on one learning goal and a practical project.","Schedule a follow-up conversation to review evidence of progress."],measure:"Measure learning completion and demonstrated skills—not course attendance alone."},
+feedback:{title:"Feedback-to-action pilot",steps:["Run a short, voluntary pulse survey with clear privacy information.","Group responses into themes without exposing individuals.","Assign an owner and share the action taken with employees."],measure:"Track response rate, actions completed, and follow-up feedback."},
+hiring:{title:"Hiring-process improvement pilot",steps:["Map each hiring stage and identify where delays occur.","Use consistent, job-related interview questions and scorecards.","Set candidate update expectations and review them weekly."],measure:"Measure time in each stage, candidate communication, and hiring-team feedback."},
+wellbeing:{title:"Wellbeing and workload pilot",steps:["Offer a voluntary check-in and explain confidentiality limits.","Discuss workload priorities and available support options.","Agree on a practical adjustment and review it together."],measure:"Review aggregated feedback and workload trends; never infer an individual's health."}
+};
+document.getElementById("makePlan").addEventListener("click",()=>{const key=document.getElementById("challenge").value,p=plans[key],team=document.getElementById("team").value.trim(),goal=document.getElementById("goal").value.trim();const out=document.getElementById("result");out.innerHTML="<strong>"+p.title+"</strong>"+(team?"<br><b>Focus:</b> "+escapeHTML(team):"")+(goal?"<br><b>Desired outcome:</b> "+escapeHTML(goal):"")+"<ol>"+p.steps.map(s=>"<li>"+s+"</li>").join("")+"</ol><b>How to evaluate:</b> "+p.measure;out.classList.add("show")});
+function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+</script>
+</body></html>
